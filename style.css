@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #54c3ef;
+}
+
+h1{
+    color: #fad744;
+    font-family: cursive;
+    text-align: center;
+}
+
+h2{
+    font-weight: 200;
+}
+
+.app{
+    display: flex;
+}
+
+.quiz{
+    background-color: #2b3252;
+    color: #fad744;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.score{
+    background-color: #fff;
+    color: #2b3252;
+    width: 7rem;
+    height: 9.5rem;
+    border: none;
+    position: sticky;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 100px;
+    padding-left: 10px;
+}
+
+p{
+    font-size: 22px;
+}
+
+input{
+    background-color: #fad744;
+    color: #2b3252;
+    margin: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn{
+    text-align: center;
+}
+
+input:disabled {
+    cursor: not-allowed;
+}
+
+hr{
+    border-color: #fad744;
+    width: 95%;
+    margin: 25px 0;
+}
+
+.option-label {
+    display: block;
+}
+
+.question {
+    margin-left: 30px;
+}
+
+@media (max-width:1000px) {
+
+    .question {
+        margin: 30px;
+    } 
+}
+
+@media  (min-width: 601px) and (max-width: 750px) {
+
+    .mcq {
+        width: 70%;
+        margin: auto;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    .score {
+        margin: auto;
+        width: 15%;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px){ 
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mcq {
+        width: 85%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .score {
+        margin: auto;
+        width: 20%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
